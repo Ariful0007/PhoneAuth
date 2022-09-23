@@ -66,7 +66,13 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.SliderAdapter
 viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        
+        if (sliderItem.getNotes().equals("1")) {
+        }
+        else  if (sliderItem.getNotes().equals("2")) {
+        }
+        else  if (sliderItem.getNotes().equals("3")) {
+        }
+
     }
 });
 

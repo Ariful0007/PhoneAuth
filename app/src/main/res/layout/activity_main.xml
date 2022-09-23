@@ -17,7 +17,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:src="@drawable/ll"
-        android:visibility="visible"
+        android:visibility="gone"
         app:civ_border_color="@color/black"
         app:civ_border_width="2dp"
         android:id="@+id/logo"
@@ -30,6 +30,7 @@
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="30dp"
+        android:visibility="gone"
         android:id="@+id/appname"
         android:layout_margin="10dp"
         android:layout_below="@id/logo"
@@ -40,6 +41,7 @@
     <com.agrawalsuneet.dotsloader.loaders.TashieLoader
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:tashieloader_animDelay="200"
         android:layout_below="@id/appname"
         app:tashieloader_animDur="1000"
@@ -50,11 +52,25 @@
         app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
         app:tashieloader_noOfDots="6" />
     <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:lottie_fileName="splash.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:lottie_fileName="splash.json"
         app:lottie_loop="true"
+
         android:visibility="gone"
         app:lottie_autoPlay="true"
         android:layout_gravity="center"
@@ -62,6 +78,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"/>
 </RelativeLayout>
+
 
 
 </LinearLayout>

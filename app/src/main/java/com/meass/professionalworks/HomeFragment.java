@@ -24,7 +24,7 @@ View view;
 CardView cardView1;
 ImageSwitcher imageSwitcher;
 Button  next;
-    int imageSwitcherImages[] =
+    int[] imageSwitcherImages =
             {R.drawable.cpp, R.drawable.ic_360, R.drawable.ic_home, R.drawable.ll, R.drawable.ic_baseline_home_24};
 
     int switcherImageLength = imageSwitcherImages.length;
@@ -68,13 +68,7 @@ Button  next;
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle=new Bundle();
-                ProfileFragement profileFragement=new ProfileFragement();
-                bundle.putString("key","Android class");
-                profileFragement.setArguments(bundle);
-                FragmentTransaction pt=getActivity().getSupportFragmentManager().beginTransaction();
-                pt.replace(R.id.content,profileFragement,"");
-                pt.commit();
+              startActivity(new Intent(getContext(),MapActivity.class));
             }
         });
         return view;

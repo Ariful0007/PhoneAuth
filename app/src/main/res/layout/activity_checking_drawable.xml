@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".CheckingDrawable">
+    <Button
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_style"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="42dp"
+        android:ems="10" >
+
+
+    </Button>
+
+</RelativeLayout>

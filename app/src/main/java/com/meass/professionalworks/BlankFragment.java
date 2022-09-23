@@ -7,11 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 public class BlankFragment extends Fragment {
 
-
+Button button;
 
     public BlankFragment() {
         // Required empty public constructor
@@ -23,6 +24,7 @@ public class BlankFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_blank, container, false);
+
         return view;
     }
 }

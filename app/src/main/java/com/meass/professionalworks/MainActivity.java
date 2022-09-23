@@ -24,10 +24,10 @@ FirebaseAuth firebaseAuth;
             @Override
             public void run() {
                 if (firebaseAuth.getCurrentUser()!=null) {
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(),SettingsActivity.class));
                 }
                 else {
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(),SettingsActivity.class));
                 }
             }
         },1000);
